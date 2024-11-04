@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/iconfont/material-icons.min.css" referrerpolicy="no-referrer" />
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+    *{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+body{
+  background-image: url("images/bg-teacher.jpeg");
+  background-size: cover;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root{
+    --purple:#6f42c1;
+    --light-color:#bfb6d2;
+    --black: #1d1c1c;
+    --white: #fff;
+    /* --light-color:#6f42c1; */
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+.heading span{
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+      
+      .teacher .box-container{
+        display: flex;
+        /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+        gap: 2rem;
+        width:70%;
+        margin-left: 16%;
+        margin-top:100px;
+       
+      }
+      
+      
+      .teacher .box-container .box{
+        background: var(--white);
+        padding: 3rem 2rem;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        border-radius: 2rem;
+        width:500px;
+        height: 460px;
+    
+      }
+      
+      .teacher .box-container .box img{
+        height: 30rem;
+      }
+      
+      .teacher .box-container .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+        margin-bottom:10px;
+        
+      }
+      
+      
+      .teacher .box-container .box .share i{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  background: none;
+  color: var(--purple);
+  border: .1rem solid var(--purple);
+  margin-left: .5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.teacher .box-container .box .share i:hover{
+  color: var(--white);
+  border: .1rem solid var(--purple);
+  background: var(--purple);
+}
+      
+      
+/* 
+      container1 */
+      .teacher .box-container1{
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+        width:50%;
+        margin-left:400px;
+        margin-top:50px;
+      }
+      
+      
+      .teacher .box-container1 .box{
+        background: var(--white);
+        padding: 3rem 2rem;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        border-radius: 2rem;
+        width:450px;
+        height: 460px;
+      }
+      
+      .teacher .box-container1 .box img{
+        height: 30rem;
+      }
+      
+      .teacher .box-container1 .box h3{
+        font-size: 2.5rem;
+        color: var(--black);
+        margin-bottom:10px;
+      }
+      
+      .teacher .box-container1 .box p{
+        font-size: 1.7rem;
+        color: var(--purple);
+        margin-bottom: 1rem;
+      }
+      .teacher .box-container1 .box .share i{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  background: none;
+  color: var(--purple);
+  border: .1rem solid var(--purple);
+  margin-left: .5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.teacher .box-container1 .box .share i:hover{
+  color: var(--white);
+  border: .1rem solid var(--purple);
+  background: var(--purple);
+}
+
+@media (max-width:800px){
+    .teacher .box-container,.teacher .box-container1{
+      display:block;
+      margin-left:150px;
+    }   
+
+    .heading{
+      margin-left:350px;
+    }
+}
+     
+      </style>
+</head>
+<body>
+    <section class="teacher" id="teacher">
+
+        <h1 class="heading">Meet Our <span>Team</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/WhatsApp Image 2024-06-26 at 11.23.39 AM.jpeg" alt="">
+                <h3>Chandrashekhar Patle</h3>
+                <div class="share">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/chandrashekhar-patle-929278257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-twitter"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+                
+               
+            </div>
+
+            <div class="box">
+                <img src="images/WhatsApp Image 2024-06-25 at 6.37.26 PM.jpeg" alt="">
+                <h3>Renuka Gaidhane</h3>
+                <div class="share">
+                  <a href="https://www.facebook.com/profile.php?id=100079461343822"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/renuka-gaidhane?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/renuka_gaidhane?igsh=cjh3djRuaTdlMWtm"><i class="fab fa-instagram"></i></a>
+              </div>
+               
+                
+            </div>
+
+            <div class="box">
+                <img src="images/WhatsApp Image 2024-06-25 at 7.51.08 PM.jpeg" alt="">
+                <h3>Anamta Sayyad</h3>
+                <div class="share">
+                  <a href="https://www.facebook.com/profile.php?id=100073659290686&mibextid=rS40aB7S9Ucbxw6v"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/anamta-naaz-sayyad-777a14292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/sayyadanamta/?utm_source=qr&r=nametag"><i class="fab fa-instagram"></i></a>
+              </div>
+             
+                
+            </div>
+            
+
+        </div>
+        <div class="box-container1">
+          <div class="box">
+            <img src="images/WhatsApp Image 2024-06-25 at 6.45.07 PM.jpeg" alt="">
+            <h3>Ruchita Ingole</h3>
+            <div class="share">
+              <a href="https://www.facebook.com/ruchita.ingole.96?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/ruchita-ingole-74447b2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/ruchi___29?igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+          </div>
+           
+           
+        </div>
+
+        <div class="box">
+            <img src="images/InShot_20240626_113251710.jpg" alt="">
+            <h3>Komal Sawarkar</h3>
+            <div class="share">
+              <a href="https://www.facebook.com/profile.php?id=100072948113054&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/komal-sawarkar-701605282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.instagram.com/_komal_sawarkar?igsh=cGlrNXR0ZDJnanVv"><i class="fab fa-instagram"></i></a> 
+          </div>
+           
+           
+        </div>
+        </div>
+
+    </section>
+
+   
+
+</body>
+</html>

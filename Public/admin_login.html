@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin login page</title>
+    <style>
+        /* Reset some default styles for the page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: 360px;
+            border: 1px solid black;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: #6f42c1;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn {
+            font-size: 1.7rem;
+            margin-top: 1rem;
+            display: inline-block;
+            padding: .4rem 0rem;
+            border-radius: .5rem;
+            border: .2rem solid #6f42c1;
+            color: #6f42c1;
+            background: none;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            margin-left: 55px;
+
+        }
+
+        .btn:hover {
+            background: #6f42c1;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Login</title>
+
+    </head>
+
+    <body>
+        <div class="login-container">
+            <form action="/adminpage" method="post" class="login-form" id="LoginForm">
+                <h2>Admin Login</h2>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <p>forget your password <a href="#">click here</a> </p><br><br>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <script>
+            let result = confirm("Only admin can fill this form");
+
+            if (result) {
+                window.open();
+            } else {
+                window.open("/", "_self");
+            }
+
+
+            // const loginForm = document.querySelector("#LoginForm");
+
+            // loginForm.addEventListener('submit', (event) => {
+            //     const adminName = document.querySelector("#username").value;
+            //     const password = document.querySelector('#password').value;
+
+            //     if (adminName ==="chandu@123"  && password === 1234) {
+                    
+            //     } else {
+                    
+            //     }
+
+            // })
+
+        </script>
+    </body>
+
+    </html>
+
+    </div>
+</body>
+
+</html>

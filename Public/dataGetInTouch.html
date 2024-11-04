@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <link rel="stylesheet" href="../CSS/dataGetInTouch.css">
+</head>
+
+<body>
+
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Admin Hub</h1>
+        </div>
+
+        <ul>
+            <li><a href="#"><img src="../images/dashboard.png" alt="Dashboard-Image"><span>Dashborad</span></a></li>
+            <li><a href="/dataAdmission"><img src="../images/student.webp"
+                        alt="Students image icon"><span>Admissions</span></a></li>
+            <li><a href="/dataFranchise"><img src="../images/teacher.png"
+                        alt="Teacher image icon"><span>Franchise</span></a></li>
+            <li><a href="/dataGetInTouch"><img src="../images/school_images.png" alt=""><span>Contact Us</span></a></li>
+            <li><a href="#"><img src="../images/help_images.png" alt=""></ion-icon><span>Help</span></a></li>
+            <li><a href="#"><img src="../images/setting_icon.png"
+                        alt="Setting icon"></ion-icon><span>Settings</span></a></li>
+        </ul>
+    </div>
+
+
+    <div id="container">
+        <div class="title">
+            <h2>Contact Us Data</h2>
+            <a href="#" class="btn">View All</a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User's Name</th>
+                    <th>Child Name</th>
+                    <th>Phone No.</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+
+            <tbody id="User_data">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script>
+        // Fetching data from NodeJS Server
+        fetch('/getInTouch')
+            .then(response => response.json())
+            .then(data => {
+                const dataContainer = document.getElementById("User_data")
+                data.forEach(element => {
+                    const tableRow = document.createElement('tr');
+
+                    // console.log(data.length);
+                    // const tableData1 = document.createElement('td');
+                    const tableData2 = document.createElement('td');
+                    const tableData3 = document.createElement('td');
+                    const tableData4 = document.createElement('td');
+                    const tableData5 = document.createElement('td');
+                    const tableData6 = document.createElement('td');
+
+
+                    // tableData1.textContent = data.length; 
+                    tableData2.textContent = element.yourName;
+                    tableData3.textContent = element.childName;
+                    tableData4.textContent = element.phoneNo;
+                    tableData5.textContent = element.yourSubject;
+                    tableData6.textContent = element.message;
+
+
+
+                    // tableRow.appendChild(tableData1)
+                    tableRow.appendChild(tableData2)
+                    tableRow.appendChild(tableData3)
+                    tableRow.appendChild(tableData4)
+                    tableRow.appendChild(tableData5)
+                    tableRow.appendChild(tableData6)
+
+                    dataContainer.appendChild(tableRow);
+
+                });
+
+            })
+            .catch(error => console.error('Error Fetching Data :', error));
+
+    </script>
+</body>
+
+</html>
